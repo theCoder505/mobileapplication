@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <title>BeWhale Demo</title>
+</head>
+
+<body>
+
+
+
+    <section id="home" class='page'>
+        <div id="appPage">
+            <div class="all_points_flex_div">
+                <div class="all_points slide1">
+                    <div class="title">Appointment</div>
+                    <div class="text_div">
+                        <i class="material-icons">child_care</i>
+                        <div id='ped_btn' class="para_blue"> Pediatrics </div>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">pregnant_woman</i>
+                        <p class="para_blue"> Obstetrics & Gynecology </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">visibility</i>
+                        <p class="para_blue"> Ophthalmology </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">local_hospital</i>
+                        <p class="para_blue"> Internal Medicine </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">hearing</i>
+                        <p class="para_blue"> Otolaryngology </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">back_hand</i>
+                        <p class="para_blue"> Dermatology </p>
+                    </div>
+                    <div class="title">Today's Reminder</div>
+                    <div class="text_div">
+                        <i class="material-icons">account_circle</i>
+                        <p class="para_blue"> Dr. Helen Jefferson </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">medical_services</i>
+                        <p class="para_blue"> Pedro Clinic </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons">child_care</i>
+                        <p class="para_blue"> Pediatrics </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons black_gray">format_list_numbered</i>
+                        <p class="para_blue black_gray"> Now #16 / You're #20 </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons black_gray">update</i>
+                        <p class="para_blue black_gray"> 20 mins waiting </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons black_gray">watch_later</i>
+                        <p class="para_blue black_gray"> 18:00 - 19:00 </p>
+                    </div>
+                    <div class="text_div">
+                        <i class="material-icons last_line">videocam</i>
+                        <div class="grid_container">
+                            <p class="online"> Online </p>
+                            <p class="startChat"> Start Chat </p>
+                            <p class="cancel"> Cancel </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="extra_scrolling_div"></div>
+
+    </section>
+
+
+
+
+
+    <section id="list" class='page hidden'> </section>
+
+
+    <!-- ----------------------------- clinic page one ------------------------------  -->
+    <section id="pedro_clinic" class="page hidden"> </section>
+
+
+    <!-- ---------------------------------- booking page -----------------------------------  -->
+    <section id="bookingPage" class='page hidden'> </section>
+
+
+
+
+    <!-- --------------------------------------- payment page ---------------------------------------  -->
+    <section id="payment" class="page hidden"> </section>
+
+
+
+
+    <!-- -------------------------------- record details ----------------------------  -->
+    <section id="recordDetails" class="page hidden"> </section>
+
+
+
+
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!-- ------------------------------------------- Records ------------------------------------------ -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <section id="record" class="page hidden">
+        <div class="infos title">
+            Records
+        </div>
+
+
+
+
+        <div class="shedule_container bgWhite">
+
+            <div class="detail_div">
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down"> account_circle </i>
+                    </span>
+                    <span class="infoTxt">
+                        Dr. Helen Jefferson
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">medical_services </i>
+                    </span>
+                    <span class="infoTxt">
+                        Pedro Clinic
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">event </i>
+                    </span>
+                    <span class="infoTxt">
+                        Sep. 30, 2021
+                    </span>
+                </div>
+            </div>
+
+            <div class="book_div">
+                <div class="line text_blue">
+                    <span>
+                        <i class="material-icons icon_down black_gray">location_on </i>
+                    </span>
+                    <span class="blue_bold black_gray">
+                        Onsite
+                    </span>
+                    <div class="bitLarge" onclick="seeDetail()">
+                        see detail
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="shedule_container bgWhite">
+
+            <div class="detail_div">
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down"> account_circle </i>
+                    </span>
+                    <span class="infoTxt">
+                        Dr. Helen Jefferson
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">medical_services </i>
+                    </span>
+                    <span class="infoTxt">
+                        Pedro Clinic
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">event </i>
+                    </span>
+                    <span class="infoTxt">
+                        Sep. 30, 2021
+                    </span>
+                </div>
+            </div>
+
+            <div class="book_div">
+                <div class="line text_blue">
+                    <span>
+                        <i class="material-icons icon_down black_gray">location_on </i>
+                    </span>
+                    <span class="blue_bold black_gray">
+                        Onsite
+                    </span>
+                    <div class="bitLarge" onclick="seeDetail()">
+                        see detail
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="shedule_container bgWhite">
+
+            <div class="detail_div">
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down"> account_circle </i>
+                    </span>
+                    <span class="infoTxt">
+                        Dr. Helen Jefferson
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">medical_services </i>
+                    </span>
+                    <span class="infoTxt">
+                        Pedro Clinic
+                    </span>
+                </div>
+
+                <div class="line black_gray">
+                    <span>
+                        <i class="material-icons black_gray icon_down">event </i>
+                    </span>
+                    <span class="infoTxt">
+                        Sep. 30, 2021
+                    </span>
+                </div>
+            </div>
+
+            <div class="book_div">
+                <div class="line text_blue">
+                    <span>
+                        <i class="material-icons icon_down black_gray">location_on </i>
+                    </span>
+                    <span class="blue_bold black_gray">
+                        Onsite
+                    </span>
+                    <div class="bitLarge" onclick="seeDetail()">
+                        see detail
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+    
+
+    <!-- --------------------------- notifications ---------------------------------  -->
+    <section id="notifications" class="page hidden">
+        <div class="infos title">
+            Notifications
+        </div>
+
+        <div class="notification_div bgWhite">
+            <span class="notifyIcons">
+                <i class="material-icons text_blue"> medical_services </i>
+            </span>
+            <span class="notification_name text_blue">
+                Pedro Clinic
+            </span>
+            <span class="deadline_time black_gray">
+                Sep. 31, 2021
+            </span>
+
+
+            <div class="detailsNtfctns black_gray">
+                You left your insurance card behind our clinic. Please pick it up.
+            </div>
+
+        </div>
+
+        <div class="notification_div bgWhite">
+            <span class="notifyIcons">
+                <i class="material-icons text_blue"> account_circle </i>
+            </span>
+            <span class="notification_name text_blue">
+                Dr. Helen Jefferson
+            </span>
+            <span class="deadline_time black_gray">
+                Sep. 15, 2021
+            </span>
+
+
+            <div class="detailsNtfctns black_gray">
+                Did you remember taking the medicine I prescribed yesterday?
+            </div>
+
+        </div>
+
+
+        <div class="notification_div bgWhite">
+            <span class="notifyIcons">
+                <i class="material-icons black_gray"> watch_later </i>
+            </span>
+            <span class="notification_name black_gray">
+                Progress Reminder
+            </span>
+            <span class="deadline_time black_gray">
+                Sep. 01, 2021
+            </span>
+
+
+            <div class="detailsNtfctns black_gray">
+                Now #20 / You're #23 / 20 min waiting Dr. Helen Jefferson, Pedro Clinic
+            </div>
+
+        </div>
+
+
+
+        <div class="notification_div bgWhite">
+            <span class="notifyIcons">
+                <i class="material-icons black_gray"> event </i>
+            </span>
+            <span class="notification_name black_gray">
+                Appoinment Reminder
+            </span>
+            <span class="deadline_time black_gray">
+                Aug. 31, 2021
+            </span>
+
+
+            <div class="detailsNtfctns black_gray">
+                Now #20 / You're #23 / 20 min waiting Dr. Helen Jefferson, Pedro Clinic
+            </div>
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+    <!-- ---------------------------------- account ------------------------------------ -->
+    <section id="account" class="page hidden">
+        <div class="infos title">
+            Account
+        </div>
+
+
+        <div id="accountSettings">
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Last Name
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    Peng
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    First Name
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    Andy
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Gender
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    Male
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Email
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    andypeng1980@gmail.com
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Phone
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    0986-938-298
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Birthday
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    Aug. 25, 1980
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Id Number
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    A382948373
+                </span>
+            </div>
+
+            <div class="settings_line_flex">
+                <span class="leftNames black_gray">
+                    Insurance Id
+                </span>
+                <span class="textsettings text_blue" contenteditable="true">
+                    Medicare 3391-0483
+                </span>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+    <section id='nav'>
+        <div class="scrollingPoint"></div>
+        <div id="bottomNav">
+            <div class="nav_grid">
+                <div id="home" class="home nav inactivated activated">
+                    <i class="material-icons">home</i>
+                    <p class="nav_para">
+                        home
+                    </p>
+                </div>
+                <div id="record" class="record nav inactivated">
+                    <i class="material-icons">text_snippet</i>
+                    <p class="nav_para">
+                        records
+                    </p>
+                </div>
+                <div id="notifications" class="notifications nav inactivated">
+                    <i class="material-icons">notifications</i>
+                    <p class="nav_para">
+                        notifications
+                    </p>
+                </div>
+                <div id="account" class="account nav inactivated">
+                    <i class="material-icons">account_circle</i>
+                    <p class="nav_para">
+                        account
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/logics.js"></script>
+
+</body>
+
+</html>
