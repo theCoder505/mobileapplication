@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+[contenteditable]:focus {
+    outline: 0px solid transparent;
+}
+
+
+
+.hidden{
+	display:none !important;
+}
+
+.page{
+	width: 100vw;
+    min-height: 90vh;
+	position:absolute;
+	overflow: hidden;
+	background-color:#f7f7f7;
+}
+
+#appPage{
+    margin: 0px auto;
+    background-color: #fff;
+}
+
+#appPagePedriates{
+    margin: 0px auto;
+}
+
+/* .all_points{
+    min-height: 90vh;
+} */
+
+.title {
+    background-color: #f7f7f7;
+    color: #5e5e5e;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 18px;
+}
+
+.text_div {
+    display: flex;
+    padding: 10px 25px;
+    font-size: 15px;
+}
+
+.material-icons, .para_blue, .online, .startChat, .activated, .sub_home, .text_blue, .blue_bold, .text_center_blue{
+    color: #4980dd;
+}
+
+.material-icons{
+    font-size: 20px;
+}
+
+.cancel{
+    color: #cd553c;
+}
+
+.para_blue {
+    margin-left: 15px;
+    max-width: 280px;
+    overflow-wrap: break-word;
+    height:10px;
+    line-height:23px;
+}
+
+.black_gray{
+    color: #5d5d5d;
+}
+
+.online { grid-area: online; margin-left: 5px;}
+.startChat { grid-area: chat; text-align: center; }
+.cancel { grid-area: cancel; }
+
+.grid_container{
+    display: grid;
+    grid-template-areas: 'online chat chat cancel';
+    grid-gap: 10px;
+    padding: 10px;
+    width: 100%;
+    margin-top: -10px;
+    margin-right: -25px;
+    height:10px;
+    line-height:23px;
+    margin-bottom: 20px;
+}
+
+.scrollingPoint {
+    height: 150px;
+    background-color: #f7f7f7;
+}
+
+#bottomNav {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    background: #fff;
+    width: 100%;
+    z-index: 200;
+}
+
+#bottomNav .nav{
+    text-align: center;
+    padding: 10px;
+    color: #bfbfbf;
+    width:25vw;
+}
+
+#bottomNav .material-icons {
+    font-size: 25px;
+    color: #bfbfbf;
+}
+
+.point_loc_san_cal .black_gray .material-icons{
+    color: #5d5d5d;
+}
+
+.inactivated{
+    border-top: 3px solid #fff;
+}
+
+.activated{
+    border-top: 3px solid #4980dd;
+    color: #4980dd!important;
+}
+
+#bottomNav .activated .material-icons{
+    color: #4980dd;
+}
+
+
+.home { grid-area: home;}
+.record { grid-area: record;}
+.notifications { grid-area: notifications; }
+.account { grid-area: account; }
+
+.nav_grid{
+    display: grid;
+    grid-template-areas: 'home record notifications account';
+}
+
+.nav_para{
+    font-size:14px;
+}
+
+
+/* ------------------ pediatrics page -----------------  */
+.bgWhite{
+    background-color: #fff;
+}
+
+
+#appointment_sub{
+    background-color: #f7f7f7;
+    color: #5e5e5e;
+    padding: 20px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sub_home{
+    position:absolute;
+    padding-left:10px;
+    line-height:60px;
+}
+
+.arrow{
+    top: 4px!important;
+}
+
+
+.ped{
+    text-align:center;
+}
+
+#loc_title{
+    margin-top:5px;
+    display:inline-block;
+}
+
+#loc_icon{
+    top:4px;
+}
+
+.loc_item{
+    margin-bottom: 10px;
+}
+
+
+.all_points .material-icons{
+    position: relative;
+    top: 2px;
+}
+
+
+.point_loc_san_cal{
+    display: grid;
+    grid-template-areas: 'loc san cal';
+    padding: 15px 10px;
+}
+
+.location{grid-area: loc;}
+.san{grid-area: san; margin-top: 5px;}
+.callifornia{grid-area: cal; margin-top: 5px;}
+
+
+
+
+#nav{
+    z-index:2;
+}
+
+
+#notesDiv{
+    margin-top: 20px;
+}
+
+.notes_grid{
+    display: grid;
+    grid-template-areas: 'left11 left11 left11 left11 right11';
+    padding: 15px 25px;
+}
+
+.note_left{grid-area: left11;}
+.note_right{grid-area: right11;}
+
+.flex_div{
+    display: flex;
+}
+
+.marginBtm{
+    margin-bottom: 20px;
+}
+
+#notesDiv .material-icons{
+    top: 0px;
+}
+
+.starIcon{
+    margin-right: 7px;
+}
+
+
+.padClass{
+    display: none;
+}
+
+.padCommonClass{
+    transition: all 0.5s ease-in-out;
+}
+
+.activated_part{
+    display: block;
+}
+
+
+.text_div p:hover{
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+/* -----------------------------------------------  */
+#pedriaticsHolder .arrow{
+    top: 4px!important;
+    position: relative;
+}
+
+#pedriaticsHolder .title{
+    font-size: 15px;
+}
+
+.icon{
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.info_div {
+    padding: 10px 0px;
+}
+
+.secondSection {
+    padding: 20px;
+}
+
+
+.grid_shedule_box {
+    display: grid;
+    grid-template-areas: 'days times';
+    padding: 15px 20px;
+    line-height: 1.8;
+}
+
+.days{grid-area: days;}
+.timeDay{grid-area: times; padding-left: 15px;}
+
+
+.book_grid{
+    display: grid;
+    grid-template-areas: 'picture book book';
+    padding: 20px;
+}
+
+.picture_div{grid-area: picture;}
+.docData{grid-area: book;}
+
+.docImage {
+    margin: 0px auto;
+    width: 100px;
+    height: 95px;
+    border-radius: 15px;
+    box-shadow: -3px 5px 5px 2px #a49f9f;
+}
+
+.docData .black_gray {
+    top: 4px;
+    position: relative;
+}
+
+#bookAppoinment {
+    float: right;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: sans;
+}
+
+
+.docData .grid_shedule_box{
+    padding: 0px;
+    padding-left: 20px;
+}
+
+
+/* ------------------------- booking page -----------------  */
+
+#doctorData{
+    padding: 15px 20px;
+}
+
+
+.grid_booking_box{
+    display: grid;
+    grid-template-areas: 'icons details details details details';
+}
+
+.icons{grid-area: icons; text-align: center;}
+.details{grid-area: details;}
+
+.icon_down{
+    top: 5px;
+    position: relative;
+}
+
+.infoTxt{
+    padding-left: 15px;
+}
+
+#doctorImg {
+    padding: 30px;
+    padding-bottom: 10px;
+}
+
+.shedule_container{
+    display: grid;
+    grid-template-areas: 'detail detail detail book book book';
+    padding: 15px 20px;
+    line-height: 2;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.detail_div{
+    grid-area: detail;
+}
+
+.book_div{
+    grid-area: book;
+    padding-left: 15px;
+    border-left: 2px solid #d5d5d5;
+}
+
+.blue_bold{
+    font-weight: 600;
+}
+
+.text_center_blue{
+    padding-left: 25px;
+}
+
+
+
+
+
+
+
+/* --------------------- payment page ----------------  */
+#checkout{
+    float: right;
+}
+
+.methods {
+    background: #fff;
+    padding: 40px 30px;
+    margin-bottom: 15px;
+}
+
+.methodImg {
+    width: 90px;
+}
+
+
+/* ----------------- menu pages -------------  */
+.bitLarge{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+
+.deadline_time {
+    float: right;
+    top: 4px;
+    position: relative;
+}
+
+.notification_div{
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.detailsNtfctns {
+    max-width: 250px;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.notifyIcons{
+    margin-right: 10px;
+}
+
+.notifyIcons .material-icons {
+    font-size: 20px;
+    top: 4px;
+    position: relative;
+}
+
+
+
+#accountSettings{
+    margin: 10px 30px;
+    font-size: 15px;
+}
+
+.settings_line_flex{
+    display: flex;
+    padding-bottom: 20px;
+    font-family: arial-black;
+}
+
+.leftNames{
+    width: 120px;
+}
+
+.textsettings {
+    word-break: break-all;
+    padding-left: 10px;
+    text-align: left;
+}
+
+
+
+/* ------------------------- basics ---------------------  */
+
+.basics_div{
+    padding: 15px 50px;
+}
+
+.main_text{
+    margin-left: 15px;
+}
+
+.basic_text_line{
+    padding: 7px 0px;
+}
+
+.infos {
+    margin-top: 10px;
+}
+
+.diagonosis_div{
+    padding: 25px 50px;
+}
+
+.diagnosisImg{
+    width: 100px;
+    height: 90px;
+    border-radius: 7px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+
+.prescription{
+    padding: 25px 50px;
+}
+
+.d_flex{
+    display: flex;
+}
+
+
+.ul{
+    margin-left: 50px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+#purchase {
+    margin-top: 25px;
+    background-color: #347ae3;
+    border-radius: 25px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    max-width: 220px;
+    padding-bottom: 15px;
+    font-size: 23px;
+}
+
+.white{
+    color: white;
+    font-size: 23px;
+}
+
+.prchsText{
+    margin-left: 7px;
+}
+
+
+.payment_line{
+    display: flex;
+    line-height: 2;
+}
+
+.statusPaymnt{
+    width: 100px;
+}
+
+.lastPaymentDiv{
+    padding: 30px 25px;
+}
+
+
+
+.extra_scrolling_div{
+    height: 250px;
+}
+
+
+
